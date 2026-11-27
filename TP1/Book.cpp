@@ -1,9 +1,8 @@
 #include "Book.h"
 
 Book::Book(const std::string &title, const Author &author, const std::string &language, const std::string &type, Date& date_publication, int isbn)
-:title_(title), author_(author), language_(language), type_(type), date_publication_(date_publication), isbn_(isbn)
+:title_(title), author_(author), language_(language), type_(type), date_publication_(date_publication), isbn_(isbn), list_id_({})
 {
-    list_isbn_ = {};
 }
 
 std::string Book::title() const
@@ -36,7 +35,7 @@ int Book::isbn() const
     return isbn_;
 }
 
-std::vector<int> Book::list_isbn() const
+std::vector<std::string> Book::list_id() const
 {
-    return list_isbn_;
+    return list_id_;
 }
