@@ -1,5 +1,7 @@
-#include "Date.h"
+#include "Book.h"
 
 int main() {
-    Date date(27, 11, 2026);
+    Date date1(27, 11, 2026);
+    Book book1("GDCP", "Shannon", "English", "Fantastique", date1, 1234);
+    std::cout << book1.type();
 }
