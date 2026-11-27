@@ -12,11 +12,11 @@ class Reader {
     std::vector<int> list_isbn_;
 
     public :
-    Reader(std::string id, std::string lastname, std::string name);
-    std::string id();
-    std::string lastname();
-    std::string name();
-    std::vector<int> list_isbn();
+    Reader(std::string& id, std::string& lastname, std::string& name);
+    std::string id() const;
+    std::string lastname() const;
+    std::string name() const;
+    std::vector<int> list_isbn() const;
 };
 
 #endif

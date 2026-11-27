@@ -10,11 +10,11 @@ class Author {
     Date birth_date_;
 
     public :
-    Author(std::string id, std::string lastname, std::string name, Date birth_date);
-    std::string id();
-    std::string lastname();
-    std::string name();
-    Date birthDate();
+    Author(const std::string& id, const std::string& lastname, const std::string& name, const Date& birth_date);
+    std::string id() const;
+    std::string lastname() const;
+    std::string name() const;
+    Date birthDate() const;
 };
 
 #endif
