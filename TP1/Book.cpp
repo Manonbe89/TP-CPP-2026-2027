@@ -1,6 +1,6 @@
 #include "Book.h"
 
-Book::Book(const std::string &title, const std::string &author, const std::string &language, const std::string &type, Date& date_publication, int isbn)
+Book::Book(const std::string &title, const Author &author, const std::string &language, const std::string &type, Date& date_publication, int isbn)
 :title_(title), author_(author), language_(language), type_(type), date_publication_(date_publication), isbn_(isbn)
 {
     list_isbn_ = {};
@@ -11,7 +11,7 @@ std::string Book::title() const
     return title_;
 }
 
-std::string Book::author() const
+Author Book::author() const
 {
     return author_;
 }
