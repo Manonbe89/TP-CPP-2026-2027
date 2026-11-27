@@ -12,7 +12,7 @@ class Book {
     std::string type_;
     Date date_publication_;
     int isbn_;
-    std::vector<int> list_isbn_;
+    std::vector<std::string> list_id_;
 
     public :
     Book(const std::string &title, const Author &author, const std::string &language, const std::string &type, Date& date_publication, int isbn);
@@ -22,6 +22,6 @@ class Book {
     std::string type() const;
     Date date_publication() const;
     int isbn() const;
-    std::vector<int> list_isbn() const;
+    std::vector<std::string> list_id() const;
 };
 #endif
